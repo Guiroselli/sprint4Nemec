@@ -2,3 +2,5 @@
 __pycache__/
 *.pyc
 .streamlit/
+data/real/
+reports/analise_reunioes_reais.csv

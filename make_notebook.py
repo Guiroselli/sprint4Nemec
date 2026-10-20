@@ -101,7 +101,29 @@ print(painel.prioridade.value_counts())
 painel.prioridade.value_counts().plot(kind="bar", title="Transcrições por prioridade");
 """),
     md("""
-## 7. Recomendações de negócio, limitações e próximos passos
+## 7. Reuniões reais do Proton Flow (transcrições anonimizadas + catálogo TOTVS)
+Usa as 30 reuniões reais do projeto `TOTUVsVers-oFinal`. O produto é identificado pelo **catálogo TOTVS** (palavras fortes por
+produto) e os indicadores usam sinais léxicos com contexto (ex.: "cancelamento de nota" não conta como churn).
+Não há gabarito humano: veja `reports/revisao_humana.csv` para validar de verdade.
+"""),
+    code("""
+if not os.path.exists("../totvs_proton"):
+    !git clone -q https://github.com/Guiroselli/TOTUVsVers-oFinal.git ../totvs_proton
+!python -m src.importar_totvs ../totvs_proton/backend/dataset_limpo.json
+!python -m src.validate_totvs
+"""),
+    code("""
+from src.totvs_pipeline import analisar_reuniao, carregar_reunioes, formatar
+reunioes = {r["id"]: r for r in carregar_reunioes()}
+print(formatar(analisar_reuniao(reunioes["1057714"]["transcricao"])))
+"""),
+    code("""
+real = pd.read_csv("reports/analise_reunioes_reais.csv")
+display(real[["id", "cliente", "produto", "sentimento", "risco_churn", "oportunidade", "prioridade", "termos"]])
+real.produto.value_counts().plot(kind="bar", title="Produto TOTVS dominante por reunião");
+"""),
+    md("""
+## 8. Recomendações de negócio, limitações e próximos passos
 Veja o `README.md` do repositório para o detalhamento completo:
 https://github.com/Guiroselli/sprint4Nemec#readme
 

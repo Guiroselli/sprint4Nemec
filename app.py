@@ -48,7 +48,7 @@ def mostrar(res: dict):
         st.write(f"Oportunidade: {', '.join(res['sinais_oportunidade']) or 'nenhum'}")
 
 
-aba1, aba2 = st.tabs(["Transcrição única", "Lote (CSV)"])
+aba1, aba2, aba3 = st.tabs(["Transcrição única", "Lote (CSV)", "Reuniões reais (TOTVS)"])
 
 with aba1:
     ex = exemplos()
@@ -71,3 +71,27 @@ with aba2:
                              ], axis=1)
             st.dataframe(tab, use_container_width=True)
             st.download_button("Baixar resultado", tab.to_csv(index=False).encode("utf-8"), "analise.csv", "text/csv")
+
+with aba3:
+    from src.totvs_pipeline import REAL_JSON, analisar_reuniao, carregar_reunioes
+    if not REAL_JSON.exists():
+        st.warning("Importe os dados reais: python -m src.importar_totvs <dataset_limpo.json>")
+    else:
+        reunioes = {f"{r['id']} · cliente {r['segmento']} · {r['data']}": r for r in carregar_reunioes()}
+        r = reunioes[st.selectbox("Reunião", list(reunioes))]
+        res = analisar_reuniao(r["transcricao"])
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Produto", (res["produto"] or "sem sinal").replace("TOTVS ", ""), f"{res['confianca_produto']:.0%} dos termos", delta_color="off")
+        c2.metric("Sentimento", res["sentimento"].capitalize(), f"score {res['score_sentimento']:+.0f}", delta_color="off")
+        c3.metric(f"{COR[res['nivel_churn']]} Risco de churn", f"{res['risco_churn']:.0f}/100", res["nivel_churn"], delta_color="off")
+        c4.metric(f"{COR[res['nivel_oportunidade']]} Oportunidade", f"{res['oportunidade']:.0f}/100", res["nivel_oportunidade"], delta_color="off")
+        st.subheader(f"{PRIO[res['prioridade']]} Prioridade {res['prioridade']}")
+        info = res["recomendacao"]
+        if res["produto_recomendado"]:
+            info += f"\n\n**Próximo passo ({res['produto_recomendado']['nome']}):** {res['produto_recomendado']['proximo_passo']}"
+        st.info(info)
+        st.write("**Principais termos:**", ", ".join(res["principais_termos"]))
+        st.write("**Sinais de churn:**", "; ".join(res["sinais_churn"]) or "nenhum")
+        st.write("**Dores detectadas:**", ", ".join(res["dores"]) or "nenhuma")
+        with st.expander("Ver transcrição"):
+            st.text(r["transcricao"][:6000])

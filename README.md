@@ -94,6 +94,36 @@ relevante: com apenas o modelo treinado em dados sintéticos, os acertos nas tra
 (sentimento 67%, churn 75%, oportunidade 83%). A melhora veio dos sinais léxicos e do tratamento de negação,
 não de um modelo melhor — o que reforça a necessidade de treinar com transcrições reais.
 
+## Integração com o projeto Proton Flow (dados reais)
+
+O projeto [TOTUVsVers-oFinal](https://github.com/Guiroselli/TOTUVsVers-oFinal) traz 30 reuniões reais anonimizadas
+(26 textos únicos, de 1,1 mil a 17,9 mil palavras) e o **catálogo de produtos TOTVS** (Fluig, CRM, Protheus, Analytics,
+RH, Supply Chain). Com eles o pipeline passou a funcionar com dados reais:
+
+```bash
+python -m src.importar_totvs caminho/TOTUVsVers-oFinal/backend/dataset_limpo.json   # grava data/real/ (ignorado no git)
+python -m src.validate_totvs      # reports/validacao_reunioes_reais.md e revisao_humana.csv
+python -m src.totvs_pipeline arquivo.txt   # analisa uma reunião
+```
+
+| Etapa | Implementação (`src/totvs_pipeline.py`) |
+|---|---|
+| Processamento | remove `[LOCUTOR n]`, marcadores `[PESSOA]`/`[EMPRESA]`, ruído de fala oral; TF-IDF ajustado no corpus real |
+| Produto | densidade de termos fortes do **catálogo** + vocabulário extra por produto; se há poucos termos, diz "sem sinal" |
+| Dores e tarefas | regras sobre frases (aprovação pendente, atraso, gargalo, insatisfação...) com trecho de evidência |
+| Churn | sinais com contexto: "cancelar o contrato" conta, "cancelamento de nota" (rotina fiscal) não |
+| Oportunidade | interesse declarado, proposta, expansão; "implantação" não conta, pois é projeto em andamento |
+| Recomendação | motor `compute_recommendations` do catálogo (fit score, benefícios, próximo passo de implantação) |
+
+**O que a execução mostrou** (`reports/validacao_reunioes_reais.md`): produto dominante RH em 13 reuniões, Protheus em 8,
+CRM em 3, Supply em 1 e uma sem sinal suficiente. Só 2 reuniões ficaram com risco Médio (ids 1057714 e 1027294), e
+conferi no texto que ambas têm falas reais de saída ("trocar de fornecedor", "a decisão é encerrar o projeto").
+
+**Limite importante:** não há gabarito humano para essas reuniões. A análise antiga do Proton Flow (LLM local de 3B +
+regras) concorda com o novo produto em apenas 1 de 9 reuniões comparáveis, mas ela também não é verdade absoluta
+(apontou `fluig` em 8 de 12). Por isso a validação real depende de preencher `reports/revisao_humana.csv`.
+Os pesos e sinais foram ajustados olhando estas mesmas reuniões, então qualquer métrica futura deve usar reuniões novas.
+
 ## Recomendações de negócio
 
 1. **Retenção em até 24h** para clientes com churn ≥ 65, com oferta personalizada e tratamento da causa-raiz
