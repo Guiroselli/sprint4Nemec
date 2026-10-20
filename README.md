@@ -1,5 +1,7 @@
 # Sprint 4 — Data Science and Statistical Computing
 
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Guiroselli/sprint4Nemec/blob/main/notebooks/Sprint4_Colab.ipynb)
+
 Solução que recebe uma **nova transcrição** de atendimento e gera automaticamente informações para a área comercial:
 
 ```
