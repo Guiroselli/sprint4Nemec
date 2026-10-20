@@ -1,0 +1,903 @@
+id,transcricao,produto,sentimento,churn,oportunidade,pred_produto,pred_sentimento,pred_churn,pred_oportunidade,risco_churn,score_oportunidade,prioridade
+0,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Atendente: Um momento enquanto verifico no sistema.
+Cliente: Cansei, quero o cancelamento imediato e não pretendo continuar.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Cartão de Crédito,negativo,1,0,Cartão de Crédito,negativo,1,0,98.7,1.6,Crítica
+1,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho uma dúvida sobre o aplicativo da conta corrente, o pix e as transferências.
+Cliente: Só estou verificando uma data e o valor atual.
+Cliente: Não tenho reclamação, mas também não tenho elogio.
+Atendente: Já localizei o seu cadastro.
+Atendente: Certo, a informação foi registrada.",Conta Digital,neutro,0,0,Conta Digital,neutro,0,0,1.6,7.4,Baixa
+2,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Quero falar do crédito consignado, o contrato e o saldo devedor.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Atendente: Já localizei o seu cadastro.
+Cliente: Tenho interesse em contratar um novo crédito com taxa menor.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Empréstimo,positivo,0,1,Empréstimo,positivo,0,1,0.1,91.8,Alta
+3,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho dúvida na simulação do empréstimo e na quitação.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Não tenho reclamação, mas também não tenho elogio.
+Atendente: Pode confirmar seu CPF, por favor?
+Cliente: Queria simular um financiamento do imóvel, pode me enviar a proposta?
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Empréstimo,neutro,0,1,Empréstimo,neutro,0,1,3.1,79.2,Alta
+4,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho dúvida na simulação do empréstimo e na quitação.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Atendente: Certo, a informação foi registrada.",Empréstimo,neutro,0,0,Empréstimo,neutro,0,0,0.7,5.7,Baixa
+5,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Preciso falar do pix e da tarifa da minha conta.
+Cliente: Estou decepcionado, prometeram resolver e não cumpriram nada.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Cliente: Apesar de gostar da marca, o problema persiste.
+Atendente: Já localizei o seu cadastro.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Conta Digital,negativo,0,0,Conta Digital,negativo,0,0,1.9,2.3,Média
+6,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Cliente: Fiquei feliz com o resultado, muito obrigado pela ajuda.
+Cliente: Claro, um instante.
+Cliente: Quero investir mais, o que vocês têm de produto com melhor rendimento?
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Investimentos,positivo,0,1,Investimentos,positivo,0,1,0.1,81.4,Alta
+7,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: Já fui na concorrência e a proposta deles é melhor, vou migrar.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Investimentos,negativo,1,0,Investimentos,negativo,1,0,95.5,19.6,Crítica
+8,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho dúvida na simulação do empréstimo e na quitação.
+Cliente: Gostaria de atualizar meu cadastro e saber os horários de atendimento.
+Cliente: Está tudo normal, só preciso conferir.
+Cliente: Queria simular um financiamento do imóvel, pode me enviar a proposta?
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Empréstimo,neutro,0,1,Empréstimo,neutro,0,1,1.4,79.6,Alta
+9,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Atendente: Já localizei o seu cadastro.
+Cliente: Já pensei em sair, mas prefiro continuar com vocês.
+Atendente: Certo, a informação foi registrada.",Conta Digital,neutro,0,0,Conta Digital,neutro,0,0,0.2,9.9,Baixa
+10,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Quero falar do crédito consignado, o contrato e o saldo devedor.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Empréstimo,negativo,1,0,Empréstimo,negativo,1,0,99.6,15.9,Crítica
+11,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando por causa do meu cartão de crédito.
+Cliente: É sobre o CDB, a rentabilidade e o resgate.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Atendente: Já localizei o seu cadastro.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Cartão de Crédito,negativo,0,0,Cartão de Crédito,negativo,0,0,0.8,3.1,Média
+12,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Atendente: Um momento enquanto verifico no sistema.
+Cliente: Gostaria de aumentar o limite e conhecer o cartão black com mais benefícios.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Cartão de Crédito,positivo,0,1,Cartão de Crédito,positivo,0,1,0.4,96.6,Alta
+13,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Só estou verificando uma data e o valor atual.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Não tenho reclamação, mas também não tenho elogio.
+Cliente: Claro, um instante.
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Certo, a informação foi registrada.",Investimentos,neutro,1,0,Investimentos,neutro,1,0,98.5,6.8,Crítica
+14,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando por causa do meu cartão de crédito.
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Cliente: Gostaria de atualizar meu cadastro e saber os horários de atendimento.
+Cliente: Gostaria de aumentar o limite e conhecer o cartão black com mais benefícios.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Cartão de Crédito,neutro,0,1,Cartão de Crédito,neutro,0,1,0.4,97.0,Alta
+15,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Cliente: Estou decepcionado, prometeram resolver e não cumpriram nada.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Seguro,negativo,0,0,Seguro,negativo,0,0,0.9,1.3,Média
+16,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: Quero cancelar o serviço e pedir a portabilidade para outra instituição.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Cartão de Crédito,negativo,1,0,Cartão de Crédito,negativo,1,0,99.3,2.1,Crítica
+17,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Fiquei feliz com o resultado, muito obrigado pela ajuda.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Atendente: Já localizei o seu cadastro.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Investimentos,positivo,0,0,Investimentos,positivo,0,0,0.2,6.2,Baixa
+18,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Cartão de Crédito,positivo,0,0,Cartão de Crédito,positivo,0,0,0.1,8.2,Baixa
+19,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Preciso falar do sinistro e do prêmio do seguro do carro.
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Cliente: Está tudo normal, só preciso conferir.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Seguro,neutro,0,0,Seguro,neutro,0,0,0.2,5.8,Baixa
+20,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Também tenho sobre a minha conta digital.
+Cliente: Estou decepcionado, prometeram resolver e não cumpriram nada.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Investimentos,negativo,0,0,Investimentos,negativo,0,0,0.6,1.6,Média
+21,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Gostaria de atualizar meu cadastro e saber os horários de atendimento.
+Atendente: Certo, a informação foi registrada.",Investimentos,neutro,0,0,Investimentos,neutro,0,0,0.1,9.1,Baixa
+22,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Investimentos,negativo,0,0,Investimentos,negativo,0,0,1.2,2.3,Média
+23,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Antes era bom, mas agora está complicado.
+Atendente: Já localizei o seu cadastro.
+Cliente: Cansei, quero o cancelamento imediato e não pretendo continuar.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Conta Digital,negativo,1,0,Conta Digital,negativo,1,0,98.9,2.1,Crítica
+24,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando sobre meus investimentos.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Teve uma demora no começo, mas depois resolveram.
+Atendente: Um momento enquanto verifico no sistema.
+Cliente: Quero investir mais, o que vocês têm de produto com melhor rendimento?
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Investimentos,positivo,0,1,Investimentos,positivo,0,1,0.1,78.3,Alta
+25,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Estou ligando sobre meus investimentos.
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Investimentos,positivo,0,0,Cartão de Crédito,positivo,0,0,0.1,13.0,Baixa
+26,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Cliente: Estou decepcionado, prometeram resolver e não cumpriram nada.
+Cliente: Apesar de gostar da marca, o problema persiste.
+Cliente: Já pensei em sair, mas prefiro continuar com vocês.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Seguro,negativo,0,0,Seguro,negativo,0,0,4.1,1.6,Média
+27,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Estou ligando sobre o meu empréstimo pessoal.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Cliente: Claro, um instante.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Empréstimo,positivo,0,0,Empréstimo,positivo,0,0,0.2,9.2,Baixa
+28,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: É sobre o CDB, a rentabilidade e o resgate.
+Cliente: Pode me enviar o comprovante por e-mail, por favor?
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Atendente: Certo, a informação foi registrada.",Investimentos,neutro,0,0,Investimentos,neutro,0,0,0.1,6.2,Baixa
+29,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Estou ligando sobre o meu seguro.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Seguro,negativo,1,0,Seguro,negativo,1,0,99.8,3.8,Crítica
+30,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Preciso falar do sinistro e do prêmio do seguro do carro.
+Cliente: Também tenho por causa do meu cartão de crédito.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Cliente: Se não resolver hoje vou cancelar tudo.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Seguro,negativo,1,0,Seguro,negativo,1,0,85.7,2.5,Crítica
+31,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Atendente: Um momento enquanto verifico no sistema.
+Cliente: Quero investir mais, o que vocês têm de produto com melhor rendimento?
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Investimentos,neutro,0,1,Investimentos,neutro,0,1,0.2,77.4,Alta
+32,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Estou ligando sobre a minha conta digital.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Conta Digital,negativo,0,0,Conta Digital,negativo,0,0,0.6,2.7,Média
+33,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na anuidade do cartão e nas parcelas da fatura.
+Cliente: Só estou verificando uma data e o valor atual.
+Atendente: Já localizei o seu cadastro.
+Atendente: Certo, a informação foi registrada.",Cartão de Crédito,neutro,0,0,Cartão de Crédito,neutro,0,0,0.3,6.9,Baixa
+34,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Estou ligando sobre a minha conta digital.
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Queria saber se há pacote de serviços com mais benefícios.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Conta Digital,positivo,0,1,Conta Digital,positivo,0,1,0.1,75.4,Alta
+35,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Gostaria de atualizar meu cadastro e saber os horários de atendimento.
+Cliente: Não quero cancelar, só quero resolver isso.
+Atendente: Certo, a informação foi registrada.",Cartão de Crédito,neutro,0,0,Cartão de Crédito,neutro,0,0,1.0,10.1,Baixa
+36,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Certo, a informação foi registrada.",Investimentos,neutro,0,0,Investimentos,neutro,0,0,0.2,5.8,Baixa
+37,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Estou ligando sobre a minha conta digital.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Conta Digital,positivo,0,0,Conta Digital,positivo,0,0,0.1,6.0,Baixa
+38,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Tenho interesse em conhecer o cartão e um limite maior de pix.
+Atendente: Certo, a informação foi registrada.",Conta Digital,neutro,0,1,Conta Digital,neutro,0,1,0.2,80.2,Alta
+39,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: É sobre o CDB, a rentabilidade e o resgate.
+Cliente: Fiquei feliz com o resultado, muito obrigado pela ajuda.
+Atendente: Pode confirmar seu CPF, por favor?
+Cliente: Quero investir mais, o que vocês têm de produto com melhor rendimento?
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Investimentos,positivo,0,1,Investimentos,positivo,0,1,0.2,80.3,Alta
+40,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Estou ligando por causa do meu cartão de crédito.
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Atendente: Já localizei o seu cadastro.
+Cliente: Gostaria de aumentar o limite e conhecer o cartão black com mais benefícios.
+Atendente: Certo, a informação foi registrada.",Cartão de Crédito,neutro,0,1,Cartão de Crédito,neutro,0,1,1.1,97.7,Alta
+41,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Estou ligando sobre a minha conta digital.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Conta Digital,negativo,0,0,Conta Digital,negativo,0,0,7.8,1.6,Média
+42,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre as parcelas do financiamento e a taxa de juros.
+Cliente: Gostaria de atualizar meu cadastro e saber os horários de atendimento.
+Cliente: Pode me enviar o comprovante por e-mail, por favor?
+Atendente: Já localizei o seu cadastro.
+Cliente: Queria simular um financiamento do imóvel, pode me enviar a proposta?
+Atendente: Certo, a informação foi registrada.",Empréstimo,neutro,0,1,Empréstimo,neutro,0,1,0.3,78.2,Alta
+43,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Cliente: Apesar de gostar da marca, o problema persiste.
+Cliente: Cansei, quero o cancelamento imediato e não pretendo continuar.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Seguro,negativo,1,0,Seguro,negativo,1,0,99.2,1.7,Crítica
+44,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Cliente: Apesar de gostar da marca, o problema persiste.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Investimentos,negativo,0,0,Investimentos,negativo,0,0,2.3,2.4,Média
+45,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: Só estou verificando uma data e o valor atual.
+Atendente: Certo, a informação foi registrada.",Conta Digital,neutro,0,0,Conta Digital,neutro,0,0,0.3,8.9,Baixa
+46,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: É sobre a apólice e a cobertura do seguro de vida.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Atendente: Já localizei o seu cadastro.
+Cliente: Se não resolver hoje vou cancelar tudo.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Seguro,negativo,1,0,Seguro,negativo,1,0,87.2,1.6,Crítica
+47,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Estou ligando sobre o meu empréstimo pessoal.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Cliente: Se não resolver hoje vou cancelar tudo.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Empréstimo,negativo,1,0,Empréstimo,negativo,1,0,93.3,0.9,Crítica
+48,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho uma dúvida sobre o aplicativo da conta corrente, o pix e as transferências.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Cliente: Vou fechar tudo e procurar outra empresa que respeite o cliente.
+Cliente: Tenho interesse em conhecer o cartão e um limite maior de pix.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Conta Digital,negativo,1,1,Conta Digital,negativo,1,1,84.3,54.5,Crítica
+49,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Gostaria de atualizar meu cadastro e saber os horários de atendimento.
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Atendente: Já localizei o seu cadastro.
+Cliente: Já fui na concorrência e a proposta deles é melhor, vou migrar.
+Atendente: Certo, a informação foi registrada.",Investimentos,neutro,1,0,Investimentos,neutro,1,0,92.4,26.1,Crítica
+50,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Quero falar do crédito consignado, o contrato e o saldo devedor.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Fiquei feliz com o resultado, muito obrigado pela ajuda.
+Atendente: Já localizei o seu cadastro.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Investimentos,positivo,0,0,Empréstimo,positivo,0,0,0.2,19.7,Baixa
+51,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Conta Digital,positivo,0,0,Conta Digital,positivo,0,0,0.2,8.5,Baixa
+52,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: É sobre as parcelas do financiamento e a taxa de juros.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Já fui na concorrência e a proposta deles é melhor, vou migrar.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Empréstimo,negativo,1,0,Empréstimo,negativo,1,0,98.7,17.8,Crítica
+53,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: É sobre a fatura do cartão e o limite.
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Gostaria de aumentar o limite e conhecer o cartão black com mais benefícios.
+Atendente: Certo, a informação foi registrada.",Cartão de Crédito,neutro,0,1,Cartão de Crédito,neutro,0,1,0.6,95.3,Alta
+54,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Estou ligando sobre o meu empréstimo pessoal.
+Cliente: Preciso falar do pix e da tarifa da minha conta.
+Cliente: Pode me enviar o comprovante por e-mail, por favor?
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Não tenho reclamação, mas também não tenho elogio.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Certo, a informação foi registrada.",Empréstimo,neutro,0,0,Conta Digital,neutro,0,0,0.5,5.5,Baixa
+55,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre a apólice e a cobertura do seguro de vida.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Seguro,negativo,1,0,Seguro,negativo,1,0,99.8,1.4,Crítica
+56,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Tive um pequeno problema, mas foi superado.
+Atendente: Já localizei o seu cadastro.
+Cliente: Quero investir mais, o que vocês têm de produto com melhor rendimento?
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Investimentos,positivo,0,1,Investimentos,positivo,0,1,0.1,79.4,Alta
+57,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho uma dúvida sobre o aplicativo da conta corrente, o pix e as transferências.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Atendente: Pode confirmar seu CPF, por favor?
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Conta Digital,negativo,0,0,Conta Digital,negativo,0,0,1.0,2.9,Média
+58,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Estou ligando sobre a minha conta digital.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Tive um pequeno problema, mas foi superado.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Conta Digital,positivo,0,0,Conta Digital,positivo,0,0,0.2,8.0,Baixa
+59,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando sobre o meu empréstimo pessoal.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Atendente: Já localizei o seu cadastro.
+Cliente: Cansei, quero o cancelamento imediato e não pretendo continuar.
+Cliente: Queria simular um financiamento do imóvel, pode me enviar a proposta?
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Empréstimo,neutro,1,1,Empréstimo,neutro,1,1,99.7,77.3,Crítica
+60,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: É sobre a fatura do cartão e o limite.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Cliente: Claro, um instante.
+Cliente: Tenho interesse em um programa de pontos e cashback melhor.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Cartão de Crédito,positivo,0,1,Cartão de Crédito,positivo,0,1,0.1,89.6,Alta
+61,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre as parcelas do financiamento e a taxa de juros.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Antes era bom, mas agora está complicado.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Empréstimo,negativo,0,0,Empréstimo,negativo,0,0,6.6,2.7,Média
+62,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na simulação do empréstimo e na quitação.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Atendente: Pode confirmar seu CPF, por favor?
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Empréstimo,negativo,0,0,Empréstimo,negativo,0,0,4.2,1.5,Média
+63,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Atendente: Já localizei o seu cadastro.
+Cliente: Cansei, quero o cancelamento imediato e não pretendo continuar.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Investimentos,negativo,1,0,Investimentos,negativo,1,0,99.6,1.6,Crítica
+64,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Cliente: Cansei, quero o cancelamento imediato e não pretendo continuar.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Investimentos,negativo,1,0,Investimentos,negativo,1,0,99.2,2.1,Crítica
+65,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Atendente: Um momento enquanto verifico no sistema.
+Cliente: Cansei, quero o cancelamento imediato e não pretendo continuar.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Cartão de Crédito,negativo,1,0,Cartão de Crédito,negativo,1,0,98.8,2.2,Crítica
+66,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na simulação do empréstimo e na quitação.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Cliente: Claro, um instante.
+Cliente: Queria simular um financiamento do imóvel, pode me enviar a proposta?
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Empréstimo,positivo,0,1,Empréstimo,positivo,0,1,0.4,81.4,Alta
+67,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho dúvida na simulação do empréstimo e na quitação.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Apesar de gostar da marca, o problema persiste.
+Atendente: Pode confirmar seu CPF, por favor?
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Empréstimo,negativo,0,0,Empréstimo,negativo,0,0,9.2,1.4,Média
+68,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho uma dúvida sobre o aplicativo da conta corrente, o pix e as transferências.
+Cliente: Só estou verificando uma data e o valor atual.
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Cliente: Tenho interesse em conhecer o cartão e um limite maior de pix.
+Atendente: Certo, a informação foi registrada.",Conta Digital,neutro,0,1,Conta Digital,neutro,0,1,0.3,76.9,Alta
+69,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Atendente: Pode confirmar seu CPF, por favor?
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Seguro,positivo,0,0,Seguro,positivo,0,0,0.1,6.3,Baixa
+70,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Preciso falar do pix e da tarifa da minha conta.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Fiquei feliz com o resultado, muito obrigado pela ajuda.
+Cliente: Teve uma demora no começo, mas depois resolveram.
+Cliente: Queria saber se há pacote de serviços com mais benefícios.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Conta Digital,positivo,0,1,Conta Digital,positivo,0,1,0.2,71.6,Alta
+71,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Atendente: Já localizei o seu cadastro.
+Cliente: Quero cancelar o serviço e pedir a portabilidade para outra instituição.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Investimentos,negativo,1,0,Investimentos,negativo,1,0,99.2,4.0,Crítica
+72,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre o CDB, a rentabilidade e o resgate.
+Cliente: Só estou verificando uma data e o valor atual.
+Cliente: Pode me enviar o comprovante por e-mail, por favor?
+Cliente: Não tenho reclamação, mas também não tenho elogio.
+Atendente: Certo, a informação foi registrada.",Investimentos,neutro,0,0,Investimentos,neutro,0,0,0.3,7.4,Baixa
+73,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: É sobre a fatura do cartão e o limite.
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Cartão de Crédito,negativo,0,0,Cartão de Crédito,negativo,0,0,0.3,4.0,Média
+74,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Estou ligando por causa do meu cartão de crédito.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Cliente: Tive um pequeno problema, mas foi superado.
+Atendente: Um momento enquanto verifico no sistema.
+Cliente: Gostaria de aumentar o limite e conhecer o cartão black com mais benefícios.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Cartão de Crédito,positivo,0,1,Cartão de Crédito,positivo,0,1,0.2,96.1,Alta
+75,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: Estou decepcionado, prometeram resolver e não cumpriram nada.
+Cliente: Antes era bom, mas agora está complicado.
+Atendente: Pode confirmar seu CPF, por favor?
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Seguro,negativo,1,0,Seguro,negativo,1,0,99.4,2.3,Crítica
+76,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Preciso falar do sinistro e do prêmio do seguro do carro.
+Cliente: Tenho uma dúvida sobre o aplicativo da conta corrente, o pix e as transferências.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Seguro,positivo,0,0,Conta Digital,positivo,0,0,0.2,8.0,Baixa
+77,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na anuidade do cartão e nas parcelas da fatura.
+Cliente: É sobre as parcelas do financiamento e a taxa de juros.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Cliente: Tive um pequeno problema, mas foi superado.
+Cliente: Gostaria de aumentar o limite e conhecer o cartão black com mais benefícios.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Cartão de Crédito,positivo,0,1,Cartão de Crédito,positivo,0,1,0.1,95.4,Alta
+78,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Já fui na concorrência e a proposta deles é melhor, vou migrar.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Seguro,negativo,1,0,Seguro,negativo,1,0,99.7,18.9,Crítica
+79,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho uma dúvida sobre o aplicativo da conta corrente, o pix e as transferências.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Conta Digital,positivo,0,0,Conta Digital,positivo,0,0,0.3,7.3,Baixa
+80,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Estou ligando sobre o meu seguro.
+Cliente: Gostaria de atualizar meu cadastro e saber os horários de atendimento.
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Cliente: Está tudo normal, só preciso conferir.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Certo, a informação foi registrada.",Seguro,neutro,0,0,Seguro,neutro,0,0,0.1,4.2,Baixa
+81,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Antes era bom, mas agora está complicado.
+Atendente: Pode confirmar seu CPF, por favor?
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Seguro,negativo,0,0,Seguro,negativo,0,0,7.1,2.3,Média
+82,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Só estou verificando uma data e o valor atual.
+Atendente: Já localizei o seu cadastro.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Investimentos,neutro,0,0,Investimentos,neutro,0,0,0.3,8.4,Baixa
+83,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre as parcelas do financiamento e a taxa de juros.
+Cliente: Preciso falar do sinistro e do prêmio do seguro do carro.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Cliente: Fiquei feliz com o resultado, muito obrigado pela ajuda.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Empréstimo,positivo,0,0,Seguro,positivo,0,0,0.2,7.6,Baixa
+84,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho dúvida na simulação do empréstimo e na quitação.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Cliente: Fiquei feliz com o resultado, muito obrigado pela ajuda.
+Atendente: Já localizei o seu cadastro.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Empréstimo,positivo,0,0,Empréstimo,positivo,0,0,0.3,6.5,Baixa
+85,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Preciso falar do sinistro e do prêmio do seguro do carro.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Cliente: Cansei, quero o cancelamento imediato e não pretendo continuar.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Seguro,negativo,1,0,Seguro,negativo,1,0,99.1,2.4,Crítica
+86,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Cliente: Não tenho reclamação, mas também não tenho elogio.
+Cliente: Claro, um instante.
+Cliente: Tenho interesse em abrir uma previdência e diversificar a carteira.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Investimentos,neutro,0,1,Investimentos,neutro,0,1,0.5,90.2,Alta
+87,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Cliente: Está tudo normal, só preciso conferir.
+Atendente: Certo, a informação foi registrada.",Investimentos,neutro,0,0,Investimentos,neutro,0,0,0.4,11.2,Baixa
+88,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho uma dúvida sobre o aplicativo da conta corrente, o pix e as transferências.
+Cliente: Só estou verificando uma data e o valor atual.
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Cliente: Está tudo normal, só preciso conferir.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Conta Digital,neutro,0,0,Conta Digital,neutro,0,0,0.4,5.8,Baixa
+89,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Cliente: Claro, um instante.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Investimentos,positivo,0,0,Investimentos,positivo,0,0,0.1,11.5,Baixa
+90,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Conta Digital,negativo,0,0,Conta Digital,negativo,0,0,0.6,5.1,Média
+91,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Estou ligando sobre meus investimentos.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Investimentos,positivo,1,0,Investimentos,positivo,1,0,97.9,8.2,Crítica
+92,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Tive um pequeno problema, mas foi superado.
+Cliente: Gostaria de contratar também um seguro residencial, pode fazer uma cotação?
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Seguro,positivo,0,1,Seguro,positivo,0,1,0.1,88.7,Alta
+93,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando sobre o meu empréstimo pessoal.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Não tenho reclamação, mas também não tenho elogio.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Empréstimo,neutro,0,0,Empréstimo,neutro,0,0,0.9,7.3,Baixa
+94,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho uma dúvida sobre o aplicativo da conta corrente, o pix e as transferências.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: Estou decepcionado, prometeram resolver e não cumpriram nada.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Conta Digital,negativo,0,0,Conta Digital,negativo,0,0,1.2,1.2,Média
+95,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando sobre a minha conta digital.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Cliente: Claro, um instante.
+Cliente: Vou fechar tudo e procurar outra empresa que respeite o cliente.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Conta Digital,negativo,1,0,Conta Digital,negativo,1,0,81.9,2.5,Crítica
+96,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre o CDB, a rentabilidade e o resgate.
+Cliente: Só estou verificando uma data e o valor atual.
+Cliente: Pode me enviar o comprovante por e-mail, por favor?
+Cliente: Está tudo normal, só preciso conferir.
+Cliente: Quero cancelar o serviço e pedir a portabilidade para outra instituição.
+Cliente: Quero investir mais, o que vocês têm de produto com melhor rendimento?
+Atendente: Certo, a informação foi registrada.",Investimentos,neutro,1,1,Investimentos,neutro,1,1,95.8,65.2,Crítica
+97,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Atendente: Já localizei o seu cadastro.
+Cliente: Já fui na concorrência e a proposta deles é melhor, vou migrar.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Cartão de Crédito,negativo,1,0,Cartão de Crédito,negativo,1,0,96.3,20.4,Crítica
+98,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho dúvida na anuidade do cartão e nas parcelas da fatura.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Atendente: Pode confirmar seu CPF, por favor?
+Cliente: Tenho interesse em um programa de pontos e cashback melhor.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Cartão de Crédito,positivo,0,1,Cartão de Crédito,positivo,0,1,0.1,88.6,Alta
+99,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Cartão de Crédito,negativo,0,0,Cartão de Crédito,negativo,0,0,7.6,1.5,Média
+100,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Estou ligando sobre o meu seguro.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Cliente: Tenho interesse em ampliar a cobertura e incluir minha família.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Seguro,positivo,0,1,Seguro,positivo,0,1,0.1,97.0,Alta
+101,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Conta Digital,negativo,0,0,Conta Digital,negativo,0,0,6.8,3.2,Média
+102,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: É sobre a apólice e a cobertura do seguro de vida.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Seguro,positivo,0,0,Seguro,positivo,0,0,0.1,8.1,Baixa
+103,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: É sobre o CDB, a rentabilidade e o resgate.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Cliente: Quero cancelar o serviço e pedir a portabilidade para outra instituição.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Investimentos,negativo,1,0,Investimentos,negativo,1,0,99.8,1.9,Crítica
+104,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho dúvida na simulação do empréstimo e na quitação.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Cliente: Tive um pequeno problema, mas foi superado.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Empréstimo,positivo,0,0,Empréstimo,positivo,0,0,0.2,8.7,Baixa
+105,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: É sobre o CDB, a rentabilidade e o resgate.
+Cliente: Estou muito satisfeito, o atendimento sempre foi excelente.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Investimentos,positivo,0,0,Investimentos,positivo,0,0,0.1,7.3,Baixa
+106,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Preciso falar do pix e da tarifa da minha conta.
+Cliente: Também tenho sobre o meu empréstimo pessoal.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: Antes era bom, mas agora está complicado.
+Cliente: Claro, um instante.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Conta Digital,negativo,0,0,Conta Digital,negativo,0,0,6.7,3.1,Média
+107,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Estou ligando sobre o meu empréstimo pessoal.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Tenho interesse em contratar um novo crédito com taxa menor.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Empréstimo,positivo,0,1,Empréstimo,positivo,0,1,0.1,89.3,Alta
+108,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Tenho uma dúvida sobre o aplicativo da conta corrente, o pix e as transferências.
+Cliente: Tenho dúvida na anuidade do cartão e nas parcelas da fatura.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Atendente: Já localizei o seu cadastro.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Conta Digital,negativo,0,0,Conta Digital,negativo,0,0,1.2,2.6,Média
+109,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na simulação do empréstimo e na quitação.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Empréstimo,negativo,1,0,Empréstimo,negativo,1,0,99.9,2.3,Crítica
+110,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando por causa do meu cartão de crédito.
+Cliente: Também tenho sobre o meu empréstimo pessoal.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Atendente: Um momento enquanto verifico no sistema.
+Cliente: Já fui na concorrência e a proposta deles é melhor, vou migrar.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Cartão de Crédito,negativo,1,0,Empréstimo,negativo,1,0,95.7,19.4,Crítica
+111,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Estou ligando sobre o meu seguro.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Seguro,positivo,0,0,Seguro,positivo,0,0,0.1,7.5,Baixa
+112,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Estou ligando sobre meus investimentos.
+Cliente: Só estou verificando uma data e o valor atual.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Atendente: Pode confirmar seu CPF, por favor?
+Cliente: Não quero cancelar, só quero resolver isso.
+Atendente: Certo, a informação foi registrada.",Investimentos,neutro,0,0,Investimentos,neutro,0,0,1.9,6.6,Baixa
+113,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Estou ligando sobre a minha conta digital.
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Cliente: Pode me enviar o comprovante por e-mail, por favor?
+Cliente: Tenho interesse em conhecer o cartão e um limite maior de pix.
+Atendente: Certo, a informação foi registrada.",Conta Digital,neutro,0,1,Conta Digital,neutro,0,1,0.2,77.8,Alta
+114,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Preciso falar do pix e da tarifa da minha conta.
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Atendente: Certo, a informação foi registrada.",Conta Digital,neutro,0,0,Conta Digital,neutro,0,0,0.2,10.2,Baixa
+115,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Quero investir mais, o que vocês têm de produto com melhor rendimento?
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Investimentos,neutro,0,1,Investimentos,positivo,0,1,0.2,83.4,Alta
+116,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Estou ligando sobre o meu seguro.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Seguro,negativo,0,0,Seguro,negativo,0,0,3.0,1.6,Média
+117,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Preciso falar do sinistro e do prêmio do seguro do carro.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Tive um pequeno problema, mas foi superado.
+Cliente: Tenho interesse em ampliar a cobertura e incluir minha família.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Seguro,positivo,0,1,Seguro,positivo,0,1,0.1,94.4,Alta
+118,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Quero falar do crédito consignado, o contrato e o saldo devedor.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Atendente: Um momento enquanto verifico no sistema.
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Empréstimo,negativo,1,0,Empréstimo,negativo,1,0,99.4,14.3,Crítica
+119,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: É sobre a fatura do cartão e o limite.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Tive um pequeno problema, mas foi superado.
+Cliente: Tenho interesse em um programa de pontos e cashback melhor.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Cartão de Crédito,positivo,0,1,Cartão de Crédito,positivo,0,1,0.1,90.2,Alta
+120,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Preciso falar do sinistro e do prêmio do seguro do carro.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Seguro,positivo,0,0,Seguro,positivo,0,0,0.2,12.3,Baixa
+121,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando por causa do meu cartão de crédito.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Cliente: Tenho interesse em um programa de pontos e cashback melhor.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Cartão de Crédito,positivo,0,1,Cartão de Crédito,positivo,0,1,0.2,92.1,Alta
+122,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Tenho interesse em ampliar a cobertura e incluir minha família.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Seguro,neutro,0,1,Seguro,neutro,0,1,0.2,94.2,Alta
+123,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Conta Digital,positivo,0,0,Conta Digital,positivo,0,0,0.1,11.2,Baixa
+124,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre a fatura do cartão e o limite.
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Cliente: Pode me enviar o comprovante por e-mail, por favor?
+Cliente: Não tenho reclamação, mas também não tenho elogio.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Cartão de Crédito,neutro,0,0,Cartão de Crédito,neutro,0,0,0.3,8.7,Baixa
+125,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho dúvida na anuidade do cartão e nas parcelas da fatura.
+Cliente: Só estou verificando uma data e o valor atual.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Claro, um instante.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Cartão de Crédito,neutro,0,0,Cartão de Crédito,neutro,0,0,0.1,5.7,Baixa
+126,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Cliente: Estou decepcionado, prometeram resolver e não cumpriram nada.
+Cliente: Antes era bom, mas agora está complicado.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Investimentos,negativo,0,0,Investimentos,negativo,0,0,1.0,1.5,Média
+127,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Preciso falar do pix e da tarifa da minha conta.
+Cliente: Recomendo para os amigos, a experiência tem sido ótima.
+Atendente: Já localizei o seu cadastro.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Conta Digital,positivo,0,0,Conta Digital,positivo,0,0,0.3,12.3,Baixa
+128,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: Tenho dúvida na anuidade do cartão e nas parcelas da fatura.
+Cliente: Pode me enviar o comprovante por e-mail, por favor?
+Cliente: Quero saber qual é o procedimento para solicitar a segunda via.
+Atendente: Pode confirmar seu CPF, por favor?
+Atendente: Certo, a informação foi registrada.",Conta Digital,neutro,0,0,Conta Digital,neutro,0,0,0.1,7.0,Baixa
+129,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho uma dúvida sobre o aplicativo da conta corrente, o pix e as transferências.
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Fui cobrado indevidamente e ninguém me dá retorno, estou bastante irritado.
+Cliente: Antes era bom, mas agora está complicado.
+Atendente: Pode confirmar seu CPF, por favor?
+Cliente: Cansei, quero o cancelamento imediato e não pretendo continuar.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Conta Digital,negativo,1,0,Cartão de Crédito,negativo,1,0,98.3,1.5,Crítica
+130,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: Só estou verificando uma data e o valor atual.
+Atendente: Um momento enquanto verifico no sistema.
+Cliente: Tenho interesse em conhecer o cartão e um limite maior de pix.
+Atendente: Certo, a informação foi registrada.",Conta Digital,neutro,0,1,Conta Digital,neutro,0,1,0.2,78.7,Alta
+131,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: É sobre a conta digital, o saldo e o extrato do app.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Conta Digital,positivo,0,0,Conta Digital,positivo,0,0,0.1,9.1,Baixa
+132,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre as parcelas do financiamento e a taxa de juros.
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Empréstimo,neutro,0,0,Empréstimo,neutro,0,0,0.2,6.1,Baixa
+133,"Atendente: Oi, tudo bem? Pode me explicar o que aconteceu?
+Cliente: Quero falar da carteira de investimentos, tesouro direto e fundos.
+Cliente: Também tenho por causa do meu cartão de crédito.
+Cliente: Estou decepcionado, prometeram resolver e não cumpriram nada.
+Atendente: Um momento enquanto verifico no sistema.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Investimentos,negativo,0,0,Investimentos,negativo,0,0,0.6,3.0,Média
+134,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Atendente: Já localizei o seu cadastro.
+Cliente: Vou fechar tudo e procurar outra empresa que respeite o cliente.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Seguro,negativo,1,0,Seguro,negativo,1,0,81.2,2.2,Crítica
+135,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando sobre a minha conta digital.
+Cliente: Fiquei feliz com o resultado, muito obrigado pela ajuda.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Já pensei em sair, mas prefiro continuar com vocês.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Conta Digital,neutro,0,0,Conta Digital,positivo,0,0,0.1,9.7,Baixa
+136,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Estou ligando sobre meus investimentos.
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Cliente: Gostaria de atualizar meu cadastro e saber os horários de atendimento.
+Cliente: Está tudo normal, só preciso conferir.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Investimentos,neutro,0,0,Investimentos,neutro,0,0,0.1,7.9,Baixa
+137,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando sobre o meu empréstimo pessoal.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Vou fechar tudo e procurar outra empresa que respeite o cliente.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Empréstimo,negativo,1,0,Empréstimo,negativo,1,0,87.9,1.8,Crítica
+138,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando sobre o meu seguro.
+Cliente: Que falta de respeito, reclamei no protocolo e continua o mesmo problema.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Seguro,negativo,0,0,Seguro,negativo,0,0,6.5,3.3,Média
+139,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Tenho dúvida na anuidade do cartão e nas parcelas da fatura.
+Cliente: Isso é um absurdo, o atendimento é péssimo e demora demais.
+Cliente: Apesar de gostar da marca, o problema persiste.
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Cartão de Crédito,negativo,1,0,Cartão de Crédito,negativo,1,0,99.6,1.8,Crítica
+140,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: É sobre a apólice e a cobertura do seguro de vida.
+Cliente: Preciso de uma informação sobre prazos e documentos.
+Cliente: Pode me enviar o comprovante por e-mail, por favor?
+Atendente: Certo, a informação foi registrada.",Seguro,neutro,0,0,Seguro,neutro,0,0,0.2,7.8,Baixa
+141,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Atendente: Pode confirmar seu CPF, por favor?
+Cliente: Gostaria de aumentar o limite e conhecer o cartão black com mais benefícios.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Cartão de Crédito,positivo,0,1,Cartão de Crédito,positivo,0,1,0.2,95.2,Alta
+142,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: É sobre o CDB, a rentabilidade e o resgate.
+Cliente: Gostei muito da solução que vocês deram, foi rápido e eficiente.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Investimentos,positivo,0,0,Investimentos,positivo,0,0,0.1,8.1,Baixa
+143,"Atendente: Boa tarde! Aqui é da central de relacionamento, qual o motivo do contato?
+Cliente: Tenho dúvida na corretora e no rendimento da aplicação.
+Cliente: Queria apenas entender como funciona e confirmar uma informação.
+Cliente: Pode me enviar o comprovante por e-mail, por favor?
+Atendente: Pode confirmar seu CPF, por favor?
+Cliente: Não quero cancelar, só quero resolver isso.
+Atendente: Perfeito, enviei os detalhes para o seu e-mail.",Investimentos,neutro,0,0,Investimentos,neutro,0,0,0.5,7.1,Baixa
+144,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Tenho dúvida na anuidade do cartão e nas parcelas da fatura.
+Cliente: Parabéns pelo atendimento, resolveram tudo de forma atenciosa.
+Cliente: Fiquei feliz com o resultado, muito obrigado pela ajuda.
+Cliente: Gostaria de aumentar o limite e conhecer o cartão black com mais benefícios.
+Atendente: Obrigado pelo feedback, vou registrar o elogio.",Cartão de Crédito,positivo,0,1,Cartão de Crédito,positivo,0,1,0.3,95.9,Alta
+145,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Meu cartão, a bandeira e o limite de crédito.
+Cliente: Tenho dúvida na renovação da apólice e na franquia.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Atendente: Já localizei o seu cadastro.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Cartão de Crédito,negativo,0,0,Seguro,negativo,0,0,7.0,3.3,Média
+146,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Preciso falar do pix e da tarifa da minha conta.
+Cliente: Adoro o serviço, é prático e funciona muito bem, estou contente.
+Cliente: Teve uma demora no começo, mas depois resolveram.
+Atendente: Já localizei o seu cadastro.
+Cliente: Tenho interesse em conhecer o cartão e um limite maior de pix.
+Atendente: Fico feliz em ajudar, qualquer coisa estamos à disposição!",Conta Digital,positivo,0,1,Conta Digital,positivo,0,1,0.1,77.2,Alta
+147,"Atendente: Olá, obrigado por entrar em contato. Como posso ajudar hoje?
+Cliente: Estou ligando por causa do meu cartão de crédito.
+Cliente: Também tenho sobre o meu seguro.
+Cliente: As taxas são abusivas e ninguém explica nada, estou revoltado.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Cartão de Crédito,negativo,1,0,Cartão de Crédito,negativo,1,0,99.3,3.6,Crítica
+148,"Atendente: Bom dia, em que posso ajudar?
+Cliente: Estou ligando sobre o meu seguro.
+Cliente: Também tenho sobre o meu empréstimo pessoal.
+Cliente: O sistema vive travando, o aplicativo não funciona e já perdi muito tempo.
+Atendente: Já localizei o seu cadastro.
+Cliente: Estou pensando em encerrar a conta e mudar para outro banco.
+Atendente: Peço desculpas pelo transtorno, vou abrir um protocolo urgente.",Seguro,negativo,1,0,Empréstimo,negativo,1,0,99.8,1.8,Crítica
+149,"Atendente: Bom dia, em que posso ajudar?
+Cliente: É sobre o CDB, a rentabilidade e o resgate.
+Cliente: Estou muito insatisfeito, já é a terceira vez que ligo e ninguém resolve.
+Cliente: Cansei, quero o cancelamento imediato e não pretendo continuar.
+Atendente: Entendo, vou escalar o seu caso com prioridade.",Investimentos,positivo,1,0,Investimentos,negativo,1,0,99.8,2.2,Crítica

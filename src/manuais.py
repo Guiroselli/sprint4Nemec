@@ -1,0 +1,50 @@
+"""Transcrições escritas à mão, com vocabulário diferente do gerador sintético.
+
+São o teste mais honesto do pipeline: não vieram do mesmo processo que gerou o treino.
+Gera data/novas_manuais.csv.  Rótulos: produto, sentimento, churn (0/1), oportunidade (0/1).
+"""
+import pandas as pd
+
+from . import config
+
+CASOS = [
+    ("Atendente: Central de atendimento, bom dia.\nCliente: Bom dia. Meu cartão foi cobrado duas vezes na fatura e já liguei ontem sem solução. Estou bem chateado.\nAtendente: Vou abrir uma contestação.\nCliente: Se isso não for estornado essa semana, eu cancelo o cartão e vou para a concorrência.",
+     "Cartão de Crédito", "negativo", 1, 0),
+    ("Atendente: Olá, como posso ajudar?\nCliente: Oi! Queria agradecer, o pix caiu na hora e o app está ótimo. Aliás, vocês têm algum pacote com mais benefícios para quem movimenta bastante?\nAtendente: Temos sim, posso enviar a proposta.\nCliente: Pode mandar, tenho interesse.",
+     "Conta Digital", "positivo", 0, 1),
+    ("Atendente: Boa tarde.\nCliente: Preciso saber a data de vencimento da próxima parcela do meu financiamento e o saldo devedor atual.\nAtendente: Um momento, por favor.\nCliente: Obrigado, anotei aqui.",
+     "Empréstimo", "neutro", 0, 0),
+    ("Atendente: Em que posso ajudar?\nCliente: Meu seguro do carro venceu e a renovação veio quarenta por cento mais cara. Um absurdo, sempre paguei em dia.\nAtendente: Posso revisar a franquia.\nCliente: Já cotei em outra seguradora e é bem mais barato. Vou sair se não baixarem o prêmio.",
+     "Seguro", "negativo", 1, 0),
+    ("Atendente: Bom dia!\nCliente: Bom dia, tenho um dinheiro parado e quero investir mais. O CDB que tenho rende pouco, o que vocês recomendam com melhor rentabilidade?\nAtendente: Posso apresentar o tesouro direto e fundos.\nCliente: Perfeito, adorei, me envia por e-mail.",
+     "Investimentos", "positivo", 0, 1),
+    ("Atendente: Atendimento, boa noite.\nCliente: O aplicativo da minha conta não abre desde ontem. Preciso pagar um boleto e estou irritado, isso é a terceira vez este mês.\nAtendente: Peço desculpas.\nCliente: Não quero cancelar a conta, mas assim fica difícil, resolvam isso.",
+     "Conta Digital", "negativo", 0, 0),
+    ("Atendente: Olá!\nCliente: Oi, gostaria de aumentar o limite do meu cartão, sempre pago a fatura em dia e estou muito satisfeito com o serviço.\nAtendente: Vou verificar a análise de crédito.\nCliente: Ótimo, obrigado!",
+     "Cartão de Crédito", "positivo", 0, 1),
+    ("Atendente: Bom dia, central de crédito.\nCliente: Fiz a simulação do empréstimo pessoal e as taxas de juros estão abusivas. Pedi portabilidade para outro banco que oferece metade da taxa.\nAtendente: Posso tentar cobrir a oferta.\nCliente: Já decidi, quero encerrar o contrato e quitar tudo hoje.",
+     "Empréstimo", "negativo", 1, 0),
+    ("Atendente: Boa tarde, em que posso ajudar?\nCliente: Queria entender como funciona o resgate da minha aplicação e se há alguma taxa. Só isso mesmo.\nAtendente: O resgate é no mesmo dia útil.\nCliente: Certo, entendi.",
+     "Investimentos", "neutro", 0, 0),
+    ("Atendente: Olá, tudo bem?\nCliente: Tudo ótimo! Acionei o sinistro do meu seguro residencial semana passada e foi resolvido super rápido, parabéns. Posso incluir meu carro na mesma apólice? Quero fazer uma cotação.\nAtendente: Claro, envio ainda hoje.",
+     "Seguro", "positivo", 0, 1),
+    ("Atendente: Bom dia.\nCliente: Preciso atualizar meu endereço no cadastro da conta e baixar o extrato dos últimos três meses.\nAtendente: Posso enviar por e-mail.\nCliente: Pode ser, obrigado.",
+     "Conta Digital", "neutro", 0, 0),
+    ("Atendente: Em que posso ajudar?\nCliente: Estou decepcionado com a anuidade do cartão, ninguém me avisou da cobrança. Quero falar com o gerente, senão encerro tudo e abro conta em outro lugar.\nAtendente: Vou transferir.",
+     "Cartão de Crédito", "negativo", 1, 0),
+]
+
+from .manuais_cegas import CASOS_CEGOS  # noqa: E402
+
+def main():
+    df = pd.DataFrame(CASOS, columns=["transcricao", "produto", "sentimento", "churn", "oportunidade"])
+    df.insert(0, "id", range(len(df)))
+    df.to_csv(config.NOVAS_MANUAIS_CSV, index=False)
+    cg = pd.DataFrame(CASOS_CEGOS, columns=df.columns[1:])
+    cg.insert(0, "id", range(len(cg)))
+    cg.to_csv(config.NOVAS_CEGAS_CSV, index=False)
+    print(f"{len(df)} manuais + {len(cg)} cegas gravadas em {config.DATA_DIR}")
+
+
+if __name__ == "__main__":
+    main()

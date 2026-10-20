@@ -1,0 +1,30 @@
+id,transcricao,produto,sentimento,churn,oportunidade
+0,"Atendente: Bom dia, pois não?
+Cliente: Oi, o meu investimento em fundos caiu bastante este mês e ninguém me avisou nada. Estou muito preocupado e bravo com isso.
+Atendente: Entendo, vou explicar a oscilação.
+Cliente: Se continuar assim vou tirar meu dinheiro e levar para outra corretora.",Investimentos,negativo,1,0
+1,"Atendente: Central, boa tarde.
+Cliente: Boa tarde! Só liguei para elogiar a moça que me atendeu semana passada no empréstimo, foi atenciosa demais. Estou tranquilo com as parcelas.
+Atendente: Que bom, vou repassar.",Empréstimo,positivo,0,0
+2,"Atendente: Olá, como ajudo?
+Cliente: Preciso da segunda via do boleto da apólice e saber até quando posso pagar sem multa.
+Atendente: Até o dia dez.
+Cliente: Beleza, valeu.",Seguro,neutro,0,0
+3,"Atendente: Bom dia!
+Cliente: Bom dia, vi no site que vocês têm cartão com cashback. Tenho interesse, como faço para trocar o meu atual?
+Atendente: Posso fazer a solicitação agora.
+Cliente: Sim, por favor, gostei da ideia.",Cartão de Crédito,positivo,0,1
+4,"Atendente: Em que posso ajudar?
+Cliente: A tarifa mensal da conta subiu e eu não fui comunicado. Isso é falta de respeito com o cliente. Vou pedir o encerramento da conta e abrir em outro banco.
+Atendente: Posso isentar a tarifa.
+Cliente: Vou pensar.",Conta Digital,negativo,1,0
+5,"Atendente: Boa noite.
+Cliente: Queria confirmar se meu pix de ontem foi compensado. Só isso.
+Atendente: Sim, foi compensado.
+Cliente: Obrigado.",Conta Digital,neutro,0,0
+6,"Atendente: Olá!
+Cliente: Oi, estou com dificuldade para entender o simulador de financiamento do imóvel, mas gostaria de contratar o crédito se a taxa for boa. Pode me mandar uma proposta?
+Atendente: Envio agora.",Empréstimo,neutro,0,1
+7,"Atendente: Bom dia.
+Cliente: Meu seguro de vida cobriu tudo direitinho, fiquei muito satisfeito. Não penso em trocar de seguradora, sou cliente há dez anos.
+Atendente: Agradecemos a confiança.",Seguro,positivo,0,0
