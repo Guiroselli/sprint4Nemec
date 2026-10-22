@@ -12,6 +12,11 @@ def code(t):
             "source": t.strip("\n").splitlines(True)}
 
 
+SRC = ["__init__", "config", "processing", "data_gen", "manuais_cegas", "manuais", "train", "scoring",
+       "pipeline", "validate", "totvs_catalog", "importar_totvs", "totvs_pipeline", "validate_totvs"]
+FONTES = [code("%%writefile src/" + n + ".py\n" + Path("src/" + n + ".py").read_text(encoding="utf-8").rstrip("\n") + "\n")
+          for n in SRC]
+
 cells = [
     md("""
 # Sprint 4 — Data Science and Statistical Computing
@@ -21,13 +26,21 @@ Este notebook roda de ponta a ponta no Google Colab (Ambiente de execução > Ex
 Atenção: os dados de treino são **sintéticos** (o repositório não tinha as transcrições reais);
 para usar dados reais, substitua `data/transcricoes_treino.csv` (colunas `id, transcricao, produto, sentimento, churn, oportunidade`).
 """),
-    md("## 1. Preparação (clona o repositório e instala dependências)"),
+    md("""
+## 1. Preparação (tudo autônomo: o código-fonte vai dentro do próprio notebook)
+As células abaixo gravam os módulos em `src/`, instalam as dependências e geram os dados de exemplo.
+Não precisa de GitHub nem de upload de arquivos.
+"""),
     code("""
 import os
-if not os.path.exists("sprint4Nemec"):
-    !git clone -q https://github.com/Guiroselli/sprint4Nemec.git
-%cd sprint4Nemec
+os.makedirs("src", exist_ok=True); os.makedirs("data", exist_ok=True)
+os.makedirs("models", exist_ok=True); os.makedirs("reports", exist_ok=True)
 !pip -q install scikit-learn pandas numpy joblib
+"""),
+] + FONTES + [
+    code("""
+!python -m src.data_gen
+!python -m src.manuais
 """),
     md("## 2. Dados e processamento"),
     code("""
